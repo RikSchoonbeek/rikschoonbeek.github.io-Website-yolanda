@@ -1,0 +1,370 @@
+/* ####### General Styling ####### */
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Cormorant', serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+.main-header-wrapper,
+.section-landing-wrapper,
+.main-footer-wrapper,
+.width-wrapper {
+    margin: 0 25px;
+}
+
+.flexbox {
+    display: -webkit-flex;
+    display: flex;
+}
+
+/* ##### Main Header Styling ##### */
+
+.main-header-wrapper {
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#main-header-logo-medium {
+    display: none;
+}
+
+/* ####### General Styling ####### */
+
+
+
+/* ####### Main Nav Styling ###### */
+
+@media only screen and (max-width: 767px) {
+    .show-nav {
+        position: fixed;
+        top: 100px;
+        left: 0;
+        color: black;
+        background: white;
+        width: 100%;
+        height: calc(100% - 100px);
+        overflow-x: hidden;
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+    }
+}
+
+.main-nav {
+    position: fixed;
+    top: 100px;
+    left: 0;
+    color: black;
+    background: white;
+    width: 100%;
+    height: calc(100% - 100px);
+    overflow-x: hidden;
+    display: none;
+}
+
+#menu-button {
+    font-size: 28px;
+}
+
+.main-menu-link {
+    text-decoration: none;
+    color: black;
+    font-size: 2.8rem;
+    padding: 3px;
+    margin: 0;
+    position: relative;
+    top: -50px;
+}
+
+.main-menu-link:hover {
+    color: grey;
+    text-decoration: none;
+}
+
+/* ####### Content Styling ####### */
+
+#logo-yolanda-truong {
+    float: left;
+    height: 156px;
+    width: auto;
+}
+
+#section-landing {
+    background: url('../images/background1.jpg') center center no-repeat;
+    background-size: cover;
+    padding: 25px 0;
+}
+
+#section-landing-content-container {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: calc(100vh - 150px); /* 100vh - header size and 2 * padding of container div */
+    min-height: 200px;
+}
+
+#section-landing-logo-large {
+    display: none;
+}
+
+.up-50px {
+    position: relative;
+    color: white;
+    bottom: 20px;
+    text-shadow:    0 0 6px black,
+    0 0 7px black,
+    0 0 8px black;
+}
+
+#section-landing h2 {
+    margin: 0;
+    font-size: 30px;
+}
+
+#section-pricing {
+    padding: 25px 0;
+}
+#section-pricing img {
+    height: 39px;
+    width: 75px;
+}
+
+#section-pricing-content-container {
+    height: calc(100vh - 50px); /* 100vh - 2 * padding of container div */
+    min-height: min-content;
+    overflow: hidden;
+    border-bottom: 1px black dotted;
+}
+
+.prijslijst-item-container {
+    font-size: 1.8rem;
+    overflow: auto;
+    border-bottom: 1px lightgrey dotted;
+}
+
+.prijstlijst-item-titel {
+    width: 70%;
+    float: left;
+}
+
+.prijslijst-prijs {
+    width: 25%;
+    float: right;
+}
+
+#section-about {
+    padding: 25px 0;
+}
+
+.content-title-about {
+    text-align: center;
+    border-bottom: 1px black dotted;
+    padding-bottom: 5px;
+    margin-top: 0;
+}
+
+.content-title-pricing {
+    text-align: center;
+    border-bottom: 1px black dotted;
+    padding-bottom: 5px;
+    margin-top: 0;
+}
+
+#section-about-content-container {
+    height: calc(100vh - 50px); /* 100vh - 2 * padding of container div */
+    min-height: min-content;
+    overflow: hidden;
+    border-bottom: 1px black dotted;
+}
+
+p {
+     font-size: 1.9rem;
+ }
+
+.paragraaf-klein {
+    font-size: 1.5rem;
+}
+
+#profiel-foto {
+    height: 130px;
+    float: left;
+    margin: 7px 15px 10px 0;
+}
+
+.contact-button {
+    background: #333333;
+    width: min-content;
+    height: min-content;
+    padding: 5px 10px;
+    font-size: 2.2rem;
+    color: white;
+    border-radius: 6px;
+    margin: 25px auto 15px auto;
+}
+
+.contact-button-link:hover {
+    text-decoration: none;
+}
+
+.contact-button:hover {
+    text-decoration: none;
+    background-color: rgba(0,0,0,0.75);
+}
+
+
+/* ####### Footer Styling ####### */
+
+#main-footer-content-container{
+    height: calc(100vh - 50px); /* 100vh - 2 * padding of container div */
+    min-height: min-content;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#main-footer {
+    padding: 25px 0;
+    background: #333333;
+    color: white;
+}
+
+.left-column {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.right-column {
+    width: 100%;
+    text-align: center;
+}
+
+.social-media-icon {
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+}
+/* ####### Media Queries ####### */
+
+@media only screen and (min-width: 768px) {
+
+    /* ##### Main Header Styling ##### */
+
+    #main-header-logo-medium {
+        display: block;
+        margin-left: -15px;
+    }
+
+    #main-header-logo-small {
+        display: none;
+    }
+
+    /* ##### Main Nav Styling ##### */
+
+    #menu-button {
+        display: none;
+    }
+
+    .main-nav,
+    .show-nav {
+        display: -webkit-flex;
+        display: flex;
+        position: static;
+        width: min-content;
+        height: min-content;
+        overflow: auto;
+        float: right;
+    }
+
+    .main-menu-link {
+        position: static;
+        float: left;
+        line-height: 100px;
+        padding: 0 15px;
+    }
+
+    .main-menu-link:hover {
+        background: rgba(0,0,0,0.09);
+        border-left: 2px black solid;
+        padding-left: 13px;
+    }
+
+    /* ##### Content Styling ##### */
+
+    .width-wrapper {
+        width: 100%;
+        margin: 0;
+    }
+
+    #logo-yolanda-truong {
+        float: left;
+        height: 242px;
+        width: auto;
+        margin-bottom: 50px;
+    }
+
+    #section-landing-content-container h2 {
+        font-size: 5.1rem;
+        text-shadow:    0 0 12px black,
+                        0 0 8px black;
+    }
+
+    #about-pricing-container {
+        display: -webkit-flex;
+        display: flex;
+        justify-content: center;
+    }
+
+    #section-pricing,
+    #section-about {
+        padding: 0;
+        width: 40%;
+        margin: 0 auto;
+    }
+
+    #section-about-content-container,
+    #section-pricing-content-container,
+    #main-footer-content-container {
+        height: 100%;
+    }
+
+    #section-about-content-container,
+    #section-pricing-content-container {
+        margin: 0;
+    }
+
+    #about-pricing-container {
+        padding: 25px 0;
+    }
+
+    .contact-button-about {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    #about-pricing-container {
+        max-width: 1050px;
+        margin: 0 auto;
+    }
+
+    #profiel-foto {
+        width: 165px;
+        height: auto;
+    }
+
+    #section-landing-content-container h2 {
+        font-size: 6.5rem;
+        text-shadow:    0 0 12px black,
+                        0 0 8px black;
+    }
+}
